@@ -1,0 +1,214 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Temple Records</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <style>
+    body {
+      font-family: sans-serif;
+      color: #333331;
+      --label-width: 150px;
+      --ordinance-details-width: 350px;
+    }
+
+    .divider {
+      background: #ccc;
+      height: 1px;
+      margin: 16px 0;
+    }
+
+    .name {
+      font-weight: bold;
+      margin-bottom: 4px;
+    }
+
+    .person-details {
+      margin-bottom: 16px;
+    }
+
+    .name,
+    .person-details {
+      grid-column: span 2;
+    }
+
+    .value,
+    .label {
+      font-size: 16px;
+      overflow-wrap: break-word;
+      overflow: hidden;
+    }
+
+    .label {
+      color: #4d4e4a;
+      opacity: 0.7;
+      width: var(--label-width);
+    }
+
+    .marriage {
+      margin-top: 16px;
+    }
+
+    .parents {
+      margin-left: 16px;
+      grid-column: span 2;
+    }
+
+    .parents.label {
+      margin-top: 16px;
+    }
+
+    .entry-grid {
+      display: grid;
+      grid-column-gap: 40px;
+      grid-template-columns: var(--ordinance-details-width) 1fr;
+    }
+
+    .ordinance-grid {
+      display: grid;
+      grid-column-gap: 8px;
+      grid-template-columns: var(--label-width) 1fr;
+      align-self: start;
+      grid-row-gap: 4px;
+    }
+
+    .event-grid {
+      display: grid;
+      grid-column-gap: 8px;
+      grid-row-gap: 4px;
+      grid-template-columns: var(--label-width) 1fr;
+      grid-template-rows: max-content max-content;
+      grid-template-areas:
+    "event-date-label event-date-value"
+    "event-place-label event-place-value";
+    }
+
+    .event.date.label {
+      grid-area: event-date-label;
+    }
+    .event.date.value {
+      grid-area: event-date-value;
+    }
+    .event.place.label {
+      grid-area: event-place-label;
+    }
+    .event.place.value {
+      grid-area: event-place-value;
+    }
+  </style>
+</head>
+<body class="body">
+  <h1><span>Temple Records</span></h1>
+  <div>
+    <div>
+    <div>
+      <div class="entry-grid">
+        <div class="ordinance-grid">
+          <div class="name"><span>Jacob Doe</span></div>
+          <div class="person-details"><span>Male</span> &middot; <span>MMMM-MMM</span></div>
+
+          <div class="label"><span>Ordinance</span>:</div>
+          <div class="value"><span>Sealing to Parents</span></div>
+          <div class="label"><span>Ordinance Date</span>:</div>
+          <div class="value"><span>20 November 2005</span></div>
+          <div class="label"><span>Temple</span>:</div>
+          <div class="value"><span>SLAKE</span></div>
+
+          <div class="label parents"><span>Father&#39;s Name</span></div>
+          <div class="value parents"><span>John Doe</span>  <span>MMMM-XXX</span> &middot; <span>Male</span></div>
+
+          <div class="label parents"><span>Mother&#39;s Name</span></div>
+          <div class="value parents"><span>Jane Doe</span>  <span>MMMM-ZZZ</span> &middot; <span>Female</span></div>
+        </div>
+        <div class="event-grid">
+          <div class="event date label"><span>Birth Date</span>:</div>
+          <div class="event date value"><span>05 Oct 1920</span></div>
+          <div class="event place label"><span>Place</span>:</div>
+          <div class="event place value"><span>Salt Lake City, Utah</span></div>
+        </div>
+      </div>
+      <div class="divider"></div>
+    </div>
+    
+</div>
+
+  <div>
+    <div>
+    <div>
+      <div class="entry-grid">
+        <div class="ordinance-grid">
+          <div class="name"><span>Homer Maxwell Carnes</span></div>
+          <div class="person-details"><span>Male</span> &middot; <span>KWZR-ZC3</span></div>
+
+          <div class="label"><span>Ordinance</span>:</div>
+          <div class="value"><span>Sealing to Parents</span></div>
+          <div class="label"><span>Ordinance Date</span>:</div>
+          <div class="value"><span>9 July 1975</span></div>
+          <div class="label"><span>Temple</span>:</div>
+          <div class="value"><span>OGDEN</span></div>
+
+          <div class="label parents"><span>Father&#39;s Name</span></div>
+          <div class="value parents"><span>Edward Alexander Carnes</span>  <span>KWNJ-64K</span> &middot; <span>Male</span></div>
+
+          <div class="label parents"><span>Mother&#39;s Name</span></div>
+          <div class="value parents"><span>Clara Ellen Harrison</span>  <span>M7JY-NV6</span> &middot; <span>Female</span></div>
+        </div>
+        <div class="event-grid">
+          <div class="event date label"><span>Birth Date</span>:</div>
+          <div class="event date value"><span>18890425</span></div>
+          <div class="event place label"><span>Place</span>:</div>
+          <div class="event place value"><span>North Powder, Union, OR</span></div>
+        </div>
+      </div>
+      <div class="divider"></div>
+    </div>
+    
+</div>
+
+  <div>
+    <div>
+    
+    
+</div>
+
+  <div>
+    <div>
+    
+    
+</div>
+
+  <div>
+    <div>
+    
+    <div>
+      <div class="entry-grid">
+        <div class="ordinance-grid">
+          <div class="name"><span>Homer Maxwell Carnes</span></div>
+          <div class="person-details"><span>Male</span> &middot; <span>KWZR-ZC3</span></div>
+
+          <div class="label"><span>Ordinance</span>:</div>
+          <div class="value"><span>Sealing to Spouse</span></div>
+          <div class="label"><span>Ordinance Date</span>:</div>
+          <div class="value"><span>28 March 2019</span></div>
+          <div class="label"><span>Temple</span>:</div>
+          <div class="value"><span>JRIVE</span></div>
+
+          <div class="label marriage"><span>Marriage Date</span>:</div>
+          <div class="value marriage"><span>2 Feb 1925</span></div>
+
+          <div class="label"><span>Place</span>:</div>
+          <div class="value"><span>Baker, Baker, Oregon</span></div>
+        </div>
+        <div class="entry-grid marriage">
+          <div class="ordinance-grid">
+            <div class="name"><span class="name">Josephine Christina Stanley</span></div>
+            <div class="person-details"><span>Female</span> &middot; <span>MWBG-NHY</span></div>
+          </div>
+          <div class="event-grid"></div>
+        </div>
+        <div class="divider"></div>
+    </div>
+    
+  </div>
+</div>
+</body>
+</html>
